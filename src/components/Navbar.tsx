@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 
 const logoTitle = "{finsweet";
 const LINKTABS = [
+    { name: "Home", link: "/" },
     { name: "About Us", link: "/aboutUs" },
     { name: "Careers", link: "/careers" },
     { name: "Services", link: "/services" },
@@ -20,8 +21,8 @@ const closedNavClasses = `
   space-y-5 text-center backdrop-blur-3xl w-2/3 py-8 px-5
   absolute top-0 right-0
   translate-x-full transition-transform duration-500
-  md:flex md:relative md:translate-x-0 md:w-full md:p-0
-  space-x-10 md:items-center md:space-y-0
+  lg:flex lg:relative lg:translate-x-0 lg:w-full lg:p-0
+  space-x-5 lg:space-x-10 lg:items-center lg:space-y-0
 `;
 
 function Navbar() {
@@ -34,7 +35,7 @@ function Navbar() {
 
   return (
     <nav className="flex justify-between items-center py-5">
-      <h1 className="font-bold text-[#063255] text-3xl md:text-4xl lg:text-5xl">
+      <h1 className="font-bold text-[#063255] text-3xl lg:text-5xl">
         <Link to='/'>{logoTitle}</Link>
       </h1>
 
@@ -44,7 +45,7 @@ function Navbar() {
             strokeWidth={2} 
             size={30}
             onClick={handleToggleNav}
-            className="md:hidden"
+            className="lg:hidden"
           />
         </div>
         
@@ -53,7 +54,7 @@ function Navbar() {
             size={24} 
             color="black"
             onClick={handleToggleNav}
-            className="md:hidden"
+            className="lg:hidden"
           />
           {
             LINKTABS.map((item) => (
@@ -65,9 +66,11 @@ function Navbar() {
               </li>
             ))
           }
-          <Link to='/contactus' className="text-link bg-[#F58A07]/10 rounded-[31px] px-8 py-4.5 text-[#F58A07]">
-            Contact us
-          </Link>
+          <li className="text-link px-8 py-4.5 bg-[#F58A07]/10 rounded-[31px]">
+            <Link to='/contactus' className="text-[#F58A07]">
+              Contact us
+            </Link>
+          </li>
         </ul>
       </section>
     </nav>

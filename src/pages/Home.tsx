@@ -1,9 +1,12 @@
+import Help from "../components/home/Help"
+import HomeHeader from "../components/home/HomeHeader"
 
 function Home() {
   return (
-    <div className="text-5xl text-blue-400">
-      Home page
-    </div>
+    <>
+      <HomeHeader />
+      <Help />
+    </>
   )
 }
 

@@ -38,14 +38,27 @@
 body{
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
-    overflow: hidden;
-}
-
-.text-h1{
-    font-weight: 700;
+    overflow-x: hidden;
 }
 
 .text-link{
     font-weight: 600;
     font-size: 1rem;
+}
+
+.text-h1{
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+.text-paragraph{
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+@media screen and (min-width: 640px){
+    .text-h1{
+        font-weight: 700;
+        font-size: 3rem;
+    }
 }
