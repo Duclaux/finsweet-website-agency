@@ -33,7 +33,7 @@ function Navbar() {
   }
 
   return (
-    <nav className="flex justify-between items-center p-4">
+    <nav className="flex justify-between items-center py-5">
       <h1 className="font-bold text-[#063255] text-3xl md:text-4xl lg:text-5xl">
         <Link to='/'>{logoTitle}</Link>
       </h1>
