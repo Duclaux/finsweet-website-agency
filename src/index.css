@@ -24,7 +24,7 @@
 @font-face {
     font-family: "Poppins";
     src: url("../src/assets/fonts/Poppins-SemiBold.ttf") format("truetype");
-    font-weight: 700;
+    font-weight: 600;
     font-style: normal;
 }
 
@@ -38,9 +38,14 @@
 body{
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
-    background-color: burlywood;
+    overflow: hidden;
 }
 
 .text-h1{
     font-weight: 700;
+}
+
+.text-link{
+    font-weight: 600;
+    font-size: 1rem;
 }
