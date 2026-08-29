@@ -1,16 +1,13 @@
-import { Outlet } from "react-router-dom"
-import Navbar from "../components/Navbar"
-import Container from "../components/Container"
+import { Outlet } from "react-router-dom";
+import Navbar from "../components/Navbar";
 
 function MainLayout() {
   return (
-    <>
-        <Container>
-          <Navbar />
-          <Outlet />
-        </Container>
-    </>
-  )
+    <div className="flex flex-col">
+      <Navbar />
+      <Outlet />
+    </div>
+  );
 }
 
-export default MainLayout
+export default MainLayout;

@@ -1,15 +1,16 @@
 import { CircleX, Menu } from "lucide-react";
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import Container from "./Container";
 
 const logoTitle = "{finsweet";
 const LINKTABS = [
-    { name: "Home", link: "/" },
-    { name: "About Us", link: "/aboutUs" },
-    { name: "Careers", link: "/careers" },
-    { name: "Services", link: "/services" },
-    { name: "Blog", link: "/blog" }
-]
+  { name: "Home", link: "/" },
+  { name: "About Us", link: "/aboutUs" },
+  { name: "Careers", link: "/careers" },
+  { name: "Services", link: "/services" },
+  { name: "Blog", link: "/blog" },
+];
 
 const openedNavClasses = `
   space-y-5 text-center backdrop-blur-3xl w-2/3 py-8 px-5
@@ -26,55 +27,51 @@ const closedNavClasses = `
 `;
 
 function Navbar() {
-
-  const [ opened, setOpened ] = useState(false);
+  const [opened, setOpened] = useState(false);
 
   const handleToggleNav = () => {
-    setOpened(prevStae => !prevStae);
-  }
+    setOpened((prevStae) => !prevStae);
+  };
 
   return (
-    <nav className="flex justify-between items-center py-5">
-      <h1 className="font-bold text-[#063255] text-3xl lg:text-5xl">
-        <Link to='/'>{logoTitle}</Link>
-      </h1>
+    <Container>
+      <nav className="flex justify-between items-center py-3">
+        <h1 className="font-bold text-[#063255] text-3xl lg:text-5xl">
+          <Link to="/">{logoTitle}</Link>
+        </h1>
 
-      <section>
-        <div>
-          <Menu 
-            strokeWidth={2} 
-            size={30}
-            onClick={handleToggleNav}
-            className="lg:hidden"
-          />
-        </div>
-        
-        <ul className={`${opened ? openedNavClasses : closedNavClasses}`}>
-          <CircleX 
-            size={24} 
-            color="black"
-            onClick={handleToggleNav}
-            className="lg:hidden"
-          />
-          {
-            LINKTABS.map((item) => (
-              <li 
-                key={item.link}
-                className="text-link text-[#394149]"
-              >
+        <section>
+          <div>
+            <Menu
+              strokeWidth={2}
+              size={30}
+              onClick={handleToggleNav}
+              className="lg:hidden"
+            />
+          </div>
+
+          <ul className={`${opened ? openedNavClasses : closedNavClasses}`}>
+            <CircleX
+              size={24}
+              color="black"
+              onClick={handleToggleNav}
+              className="lg:hidden"
+            />
+            {LINKTABS.map((item) => (
+              <li key={item.link} className="text-link text-[#394149]">
                 <Link to={item.link}>{item.name}</Link>
               </li>
-            ))
-          }
-          <li className="text-link px-8 py-4.5 bg-[#F58A07]/10 rounded-[31px]">
-            <Link to='/contactus' className="text-[#F58A07]">
-              Contact us
-            </Link>
-          </li>
-        </ul>
-      </section>
-    </nav>
-  )
+            ))}
+            <li className="text-link px-8 py-4.5 bg-[#F58A07]/10 rounded-[31px]">
+              <Link to="/contactus" className="text-[#F58A07]">
+                Contact us
+              </Link>
+            </li>
+          </ul>
+        </section>
+      </nav>
+    </Container>
+  );
 }
 
-export default Navbar
+export default Navbar;
