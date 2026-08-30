@@ -1,11 +1,11 @@
-import Help from "../components/home/Help"
+import BlogCards from "../components/home/BlogCards"
 import HomeHeader from "../components/home/HomeHeader"
 
 function Home() {
   return (
     <>
       <HomeHeader />
-      <Help />
+      <BlogCards />
     </>
   )
 }
