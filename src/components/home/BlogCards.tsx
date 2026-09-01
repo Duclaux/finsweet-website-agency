@@ -4,7 +4,7 @@ import Container from "../Container"
 function BlogCards() {
   return (
     <Container>
-      <div className='text-2x mt-12.5 xl:mt-22.5'>
+      <div className='text-2x my-12.5 xl:my-22.5'>
         <div>
           <h1 className="text-h1">
             We help more than 1500<br className="hidden xl:flex"/>companies from all sectors
@@ -15,7 +15,7 @@ function BlogCards() {
           </p>
         </div>
 
-        <div className="mt-8 xl:mt-16 flex items-center justify-between">
+        <div className="mt-8 xl:mt-16 space-y-12 md:w-fit md:mx-auto xl:w-full xl:space-y-0 xl:flex items-center justify-between">
           <CardBlogs img="../src/assets/images/card-blog-bg-1.png" title="Business strategy"/>
           <CardBlogs img="../src/assets/images/card-blog-bg-2.png" title="Digitalization"/>
           <CardBlogs img="../src/assets/images/card-blog-bg-3.png" title="Risk assessment"/>
