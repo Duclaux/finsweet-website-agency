@@ -1,4 +1,5 @@
 import BlogCards from "../components/home/BlogCards"
+import Exepiency from "../components/home/Exepiency"
 import HomeHeader from "../components/home/HomeHeader"
 import Solutions from "../components/home/Solutions"
 
@@ -8,6 +9,7 @@ function Home() {
       <HomeHeader />
       <BlogCards />
       <Solutions />
+      <Exepiency />
     </>
   )
 }
