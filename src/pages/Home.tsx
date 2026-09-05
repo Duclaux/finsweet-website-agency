@@ -3,6 +3,7 @@ import Exepiency from "../components/home/Exepiency"
 import HomeHeader from "../components/home/HomeHeader"
 import Solutions from "../components/home/Solutions"
 import Service from "../components/home/Service"
+import NewsBlock from "../components/home/NewsBlock"
 
 function Home() {
   return (
@@ -12,6 +13,7 @@ function Home() {
       <Solutions />
       <Exepiency />
       <Service />
+      <NewsBlock />
     </>
   )
 }
