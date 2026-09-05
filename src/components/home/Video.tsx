@@ -3,7 +3,7 @@ import Container from "../Container"
 function Video() {
   return (
     <Container>
-      <div className="flex flex-col-reverse xl:flex-row xl:items-center xl:justify-around mt-25 xl:mt-32">
+      <div className="flex flex-col-reverse xl:flex-row xl:items-center xl:justify-around my-25 xl:my-32">
         <div>
             <h1 className="text-h1">
                 Finsweet was a dream<br/> to work with

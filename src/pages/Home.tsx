@@ -5,6 +5,7 @@ import Solutions from "../components/home/Solutions"
 import Service from "../components/home/Service"
 import NewsBlock from "../components/home/NewsBlock"
 import Video from "../components/home/Video"
+import LastestBlogNews from "./LastestBlogNews"
 
 function Home() {
   return (
@@ -16,6 +17,7 @@ function Home() {
       <Service />
       <NewsBlock />
       <Video />
+      <LastestBlogNews />
     </>
   )
 }
