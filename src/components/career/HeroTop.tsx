@@ -9,7 +9,7 @@ function HeroTop() {
         <header className="xl:flex xl:items-center space-y-3 xl:space-y-0">
           <section className="w-full h-fit md:h-90">
             <h1 className="text-h1">
-              We serve clients with ground breaking solutions
+              We hired people who are very passionate about what they do
             </h1>
 
             <p className="text-paragraph text-[#5B5B5B] mt-6 mb-8">
