@@ -1,4 +1,5 @@
 import Header from "../components/aboutUs/Header"
+import Intention from "../components/aboutUs/Intention"
 import Statistics from "../components/aboutUs/Statistics"
 
 function AboutUs() {
@@ -6,6 +7,7 @@ function AboutUs() {
     <>
       <Header />
       <Statistics />
+      <Intention />
     </>
   )
 }
