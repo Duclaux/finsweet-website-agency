@@ -4,7 +4,7 @@ import CircularBadge from "../CircularBadge";
 
 function Header() {
   return (
-    <div className="flex-1 min-h-0 h-full w-screen bg-[#DCEAF5] -z-20 py-10 xl:py-20">
+    <div className="flex-1 min-h-0 h-full w-screen xl:bg-[#DCEAF5] -z-20 py-10 xl:py-20">
       <Container>
         <header className="xl:flex xl:items-center space-y-3 xl:space-y-0">
           <section className="w-full h-fit md:h-90">
@@ -26,7 +26,7 @@ function Header() {
           </section>
 
           <section className="w-full h-62.5 md:h-154 xl:h-162.5 relative">
-            <img src="../src/assets/images/about-header-bg.png" alt="" />
+            <img src="../src/assets/images/about-header-bg.png" alt="" className="w-full"/>
             <div className="absolute -bottom-15 -right-10 hidden xl:flex">
               <CircularBadge text="Best agency 2020 - 2021 | london" />
             </div>
