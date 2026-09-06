@@ -25,7 +25,7 @@ function Video() {
                 src="../src/assets/images/3246669-uhd_3840_2160_25fps.mp4" 
                 autoPlay
                 className="rounded-[20px]"
-                controls  
+                controls
             ></video>
         </div>
       </div>
