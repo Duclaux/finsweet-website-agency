@@ -1,9 +1,10 @@
+import HeroTop from "../components/career/HeroTop"
 
 function Careers() {
   return (
-    <div className="text-5xl text-blue-400">
-      Careers pages
-    </div>
+    <>
+      <HeroTop />
+    </>
   )
 }
 
