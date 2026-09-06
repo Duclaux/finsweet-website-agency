@@ -14,20 +14,21 @@ function Header() {
             </h1>
 
             <p className="text-paragraph text-[#5B5B5B] mt-6 mb-8">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam leo odio, sagittis quis ornare quis.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
+              leo odio, sagittis quis ornare quis.
             </p>
 
             <button className="text-link px-5 py-3 xl:px-8 xl:py-4.5 bg-[#F58A07] rounded-[31px]">
-                <Link to="/services" className="text-white">
-                  Work With Us
-                </Link>
-              </button>
+              <Link to="/services" className="text-white">
+                Work With Us
+              </Link>
+            </button>
           </section>
 
           <section className="w-full h-62.5 md:h-154 xl:h-162.5 relative">
             <img src="../src/assets/images/about-header-bg.png" alt="" />
             <div className="absolute -bottom-15 -right-10 hidden xl:flex">
-                <CircularBadge text="Best agency 2020 - 2021 | london" />
+              <CircularBadge text="Best agency 2020 - 2021 | london" />
             </div>
           </section>
         </header>
