@@ -1,9 +1,8 @@
+import BlogHero from "../components/blog/BlogHero"
 
 function Blog() {
   return (
-    <div className="text-5xl text-blue-400">
-      Blog pages
-    </div>
+    <BlogHero />
   )
 }
 
